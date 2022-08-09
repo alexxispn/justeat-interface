@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="topbar">
-  <div class="topbar__container">
+  <div class="topbar__mobile">
     <img src="./assets/icons/hambuger.svg" alt="Menu" width="28">
     <img src="./assets/icons/logo-white.svg" alt="Logo" width="90">
     <div>
@@ -18,11 +18,22 @@
       <img src="./assets/icons/bars.svg" alt="Order" width="36">
     </div>
   </div>
+  <div class="topbar__desktop">
+    <img src="./assets/icons/logo-orange.svg" alt="Logo" width="120">
+    <ul>
+      <li class="user">
+        <a href="">Pedro</a>
+      </li>
+      <li>
+        <a href="">Ayuda</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 <div class="page-container">
   <div class="searcher">
-    <img src="./assets/icons/search-icon.svg" alt="Search" width="18">
+    <img src="./assets/icons/search-icon.svg" alt="Search" width="24">
     <input type="text" placeholder="Buscar restaurante o cocina">
   </div>
   <div class="promo">
@@ -37,6 +48,10 @@
     <div class="promo__element">
       <img src="./assets/promotions/alta-cocina.webp" alt="Alta cocina">
       <p class="promo__text">Alta cocina</p>
+    </div>
+    <div class="promo__element">
+      <img src="./assets/promotions/poke.webp" alt="Poke">
+      <p class="promo__text">Poke</p>
     </div>
     <div class="promo__element">
       <img src="./assets/promotions/sushi.webp" alt="Sushi">
@@ -63,11 +78,30 @@
     </div>
     <a href="">cambiar dirección</a>
   </div>
-  <div class="results">
-    <img src="./assets/icons/info.svg" alt="results" width="18px">
-    <p>193 restaurantes abiertos</p>
+  <div class="filter">
+    <h2><img src="./assets/icons/category-hexagon.svg" alt="Filter" width="20"> Otras A-Z</h2>
+    <div class="filter__element">
+      <p>Africana</p>
+      <p>1</p>
+    </div>
+    <div class="filter__element">
+      <p>Alimentación</p>
+      <p>3</p>
+    </div>
+    <div class="filter__element">
+      <p>Alta cocina</p>
+      <p>5</p>
+    </div>
+    <div class="filter__element">
+      <p>Americana</p>
+      <p>45</p>
+    </div>
   </div>
   <div class="restaurant">
+    <div class="restaurant__results">
+      <img src="./assets/icons/info.svg" alt="results" width="18px">
+      <p>193 restaurantes abiertos</p>
+    </div>
     <article class="restaurant__element sushi">
       <div class="restaurant__image">
         <img src="./assets/restaurants/sushi_ichiban/logo.gif" alt="Sushi Ichiban">
