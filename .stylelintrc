@@ -1,16 +1,57 @@
 {
   "extends": "stylelint-config-standard",
   "customSyntax": "postcss-syntax",
+  "plugins": [
+    "stylelint-order",
+    "stylelint-selector-bem-pattern"
+  ],
   "rules": {
     "declaration-colon-newline-after": "always-multi-line",
     "selector-type-no-unknown": null,
     "property-no-unknown": [
-        true,
-        {
-          "ignoreProperties": [
-            "content-visibility"
-          ]
-        }
-    ]
+      true,
+      {
+        "ignoreProperties": [
+          "content-visibility"
+        ]
+      }
+    ],
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "width",
+      "height",
+      "content-visibility",
+      "display",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "border",
+      "border-radius",
+      "background",
+      "color",
+      "font",
+      "text",
+      "list-style",
+      "position",
+      "gap"
+    ],
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    }
   }
 }
