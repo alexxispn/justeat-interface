@@ -36,3 +36,14 @@ Atentamente,
 El equipo de Just Eat.
 
 </aside>
+
+<aside>
+🖌️ **Enlace Figma**
+
+Es imprescindible crearse una cuenta para poder descargar recursos y ver las especificaciones de cada elemento.
+
+[Ver Figma](https://www.figma.com/file/tBgkX0T6O5Cxh6aPu6qyx1/Just-Eat-Interface?node-id=0%3A1)
+
+</aside>
+
+![Just Eat](./src/assets/just-eat-figma.png)
